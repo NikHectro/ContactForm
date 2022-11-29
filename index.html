@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voodoo</title>
+    <!-- <link rel="stylesheet" href=""> -->
+  </head>
+  <body>
+    <!--Шапка сайту-->
+    <header></header>
+
+    <main>
+      <h1>Contact Us</h1>
+      <p>The Voodoo team is looking forward to hearing from you!</p>
+
+      <form name="signup_form" autocomplete="on" novalidate>
+        <input type="text" name="fullname" placeholder="Full Name*" required />
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Title/Position*"
+          required
+        />
+        <select name="practice" required>
+          <!-- for discus use tag <datalist> -->
+          <option value="none" selected disabled hidden>
+            Practice / Institution*
+          </option>
+          <option value="1">Variant1</option>
+          <option value="2">Variant2</option>
+          <option value="3">Variant3</option>
+        </select>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address*"
+          required
+        />
+        <input
+          type="tel"
+          name="phone_number"
+          placeholder="Phone Number*"
+          required
+        />
+        <select name="profession" required>
+          <option value="none" selected disabled hidden>
+            Medical Profession*
+          </option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <select name="inquiry" required>
+          <option value="none" selected disabled hidden>
+            Type of Inquiry*
+          </option>
+          <option value="1">Variant1</option>
+          <option value="2">Variant2</option>
+          <option value="3">Variant3</option>
+        </select>
+        <textarea
+          name="message"
+          rows="10"
+          placeholder="Enter Message*"
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div>MAP</div>
+    </main>
+
+    <!--Підвал-->
+    <footer></footer>
+  </body>
+</html>
