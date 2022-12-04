@@ -5,76 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voodoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.cdnfonts.com/css/avenir-next-cyr"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <!--Шапка сайту-->
     <header></header>
 
+    <!-- Унікальний контент сторінки -->
     <main>
-      <h1>Contact Us</h1>
-      <p>The Voodoo team is looking forward to hearing from you!</p>
+      <div class="container">
+        <div class="elipse1"></div>
+        <div class="elipse2"></div>
+        <div class="elipse97"></div>
+        <div class="elipse98"></div>
 
-      <form name="signup_form" autocomplete="on" novalidate>
-        <input type="text" name="fullname" placeholder="Full Name*" required />
-        <input
-          type="text"
-          name="fullname"
-          placeholder="Title/Position*"
-          required
-        />
-        <select name="practice" required>
-          <!-- for discus use tag <datalist> -->
-          <option value="none" selected disabled hidden>
-            Practice / Institution*
-          </option>
-          <option value="1">Variant1</option>
-          <option value="2">Variant2</option>
-          <option value="3">Variant3</option>
-        </select>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address*"
-          required
-        />
-        <input
-          type="tel"
-          name="phone_number"
-          placeholder="Phone Number*"
-          required
-        />
-        <select name="profession" required>
-          <option value="none" selected disabled hidden>
-            Medical Profession*
-          </option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-          <option value="4">Option 4</option>
-          <option value="5">Option 5</option>
-        </select>
-        <select name="inquiry" required>
-          <option value="none" selected disabled hidden>
-            Type of Inquiry*
-          </option>
-          <option value="1">Variant1</option>
-          <option value="2">Variant2</option>
-          <option value="3">Variant3</option>
-        </select>
-        <textarea
-          name="message"
-          rows="10"
-          placeholder="Enter Message*"
-        ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <h1>Contact Us</h1>
+        <p class="subtitle">
+          The Voodoo team is looking forward to hearing from you!
+        </p>
 
-      <div>MAP</div>
+        <form class="form" name="signup_form" autocomplete="on" novalidate>
+          <input
+            class="form__input"
+            type="text"
+            name="fullname"
+            placeholder="Full Name*"
+            required
+          />
+          <input
+            class="form__input"
+            type="text"
+            name="fullname"
+            placeholder="Title/Position*"
+            required
+          />
+          <select class="form__select" name="practice" required>
+            <!-- for discus use tag <datalist> -->
+            <option value="none" selected disabled hidden>
+              Practice / Institution*
+            </option>
+            <option value="1">Variant1</option>
+            <option value="2">Variant2</option>
+            <option value="3">Variant3</option>
+          </select>
+
+          <!-- Email -->
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Email Address*"
+            required
+          />
+
+          <!-- Phone -->
+          <input
+            class="form__input"
+            type="tel"
+            name="phone_number"
+            placeholder="Phone Number*"
+            required
+          />
+
+          <!-- Medical Profession -->
+          <select class="form__elect" name="profession" required>
+            <option value="none" selected disabled hidden>
+              Medical Profession*
+            </option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+          </select>
+
+          <select name="inquiry" required>
+            <option value="none" selected disabled hidden>
+              Type of Inquiry*
+            </option>
+            <option value="1">Variant1</option>
+            <option value="2">Variant2</option>
+            <option value="3">Variant3</option>
+          </select>
+
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="Enter Message*"
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div>MAP</div>
+      </div>
     </main>
 
     <!--Підвал-->
